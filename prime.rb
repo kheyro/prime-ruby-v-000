@@ -1,6 +1,6 @@
 def prime?(number)
   i = 2
-  return false if number < 0
+  return false if number <= 0
   # find nearest sqrt
   nearest_root = Math.sqrt(number).round
   # modulo to all number until sqrt, if no divisible found, then it is a prime

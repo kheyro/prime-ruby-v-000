@@ -4,7 +4,8 @@ def prime?(number)
   nearest_root = Math.sqrt(number).round
   # modulo to all number until sqrt, if no divisible found, then it is a prime
   while i < nearest_root
-    return true if ( nearest_root % i == 0)
+    return true if ( number % i == 0)
+    i += 1
   end
 
   false
